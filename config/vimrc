@@ -1,3 +1,45 @@
+filetype plugin indent on
+runtime! init/**.vim
+
 packadd minpac
-  call
-minpac#init()
+call minpac#init()
+
+"General Plugins
+call minpac#add('airblade/vim-gitgutter')
+call minpac#add('kien/ctrlp.vim')
+call minpac#add('tpope/vim-rsi')
+call minpac#add('tpope/vim-projectionist')
+call minpac#add('richsoni/vim-ecliptic')
+call minpac#add('bogado/file-line')
+call minpac#add('godlygeek/tabular')
+call minpac#add('tpope/vim-abolish')
+call minpac#add('tpope/vim-commentary')
+call minpac#add('tpope/vim-repeat')
+call minpac#add('tpope/vim-surround')
+call minpac#add('tpope/vim-speeddating')
+
+"Writing Plugins
+call minpac#add('git@github.com:reedes/vim-lexical.git')
+call minpac#add('townk/vim-autoclose')
+call minpac#add('tpope/vim-dispatch')
+call minpac#add('tpope/vim-vinegar')
+call minpac#add('tpope/vim-eunuch')
+call minpac#add('tpope/vim-scriptease')
+call minpac#add('tpope/vim-fugitive')
+call minpac#add('tpope/vim-sensible')
+call minpac#add('tpope/vim-unimpaired')
+
+ "Language Plugins
+call minpac#add('chrisbra/csv.vim')
+call minpac#add('jussi-kalliokoski/harmony.vim')
+call minpac#add('moll/vim-node')
+call minpac#add('tpope/vim-haml')
+call minpac#add('tpope/vim-markdown')
+call minpac#add('vim-ruby/vim-ruby')
+
+" "colors
+call minpac#add('twerth/ir_black')
+
+packloadall
+
+colorscheme grb256
