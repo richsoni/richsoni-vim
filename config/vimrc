@@ -29,13 +29,17 @@ call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-sensible')
 call minpac#add('tpope/vim-unimpaired')
 
- "Language Plugins
+"Language Plugins
 call minpac#add('chrisbra/csv.vim')
 call minpac#add('jussi-kalliokoski/harmony.vim')
 call minpac#add('moll/vim-node')
 call minpac#add('tpope/vim-haml')
 call minpac#add('tpope/vim-markdown')
 call minpac#add('vim-ruby/vim-ruby')
+
+"JAVASCRIPT NICETIES
+"V Requires npm-install -g import-js
+call minpac#add('Galooshi/vim-import-js')
 
 " "colors
 call minpac#add('twerth/ir_black')

@@ -1,6 +1,9 @@
 autocmd QuickFixCmdPost *grep* cwindow
 
-set cm=blowfish2
+if has('nvim')
+else
+  set cm=blowfish2
+endif
 set autowrite
 set path+=**
 "UX Stuff
