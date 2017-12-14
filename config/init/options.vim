@@ -48,3 +48,5 @@ set scrolljump=5
 set timeout
 set noswapfile
 set nobackup
+set iskeyword+=\-
+set showcmd

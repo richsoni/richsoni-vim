@@ -1,10 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/rsoni/code/rooms/spec/vcr'
-let g:netrw_dirhist_2='/Users/rsoni/code/rooms/spec/models'
-let g:netrw_dirhist_3='/Users/rsoni/code/rooms/spec'
-let g:netrw_dirhist_4='/Users/rsoni/code/rooms/spec/vcr'
-let g:netrw_dirhist_5='/Users/rsoni/code/rooms'
-let g:netrw_dirhist_6='/Users/rsoni/code'
-let g:netrw_dirhist_7='/Users/rsoni/code/mena-ui'
-let g:netrw_dirhist_8='/Users/rsoni/code/mena-ui/develop'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/rsoni/code/mena-ui/develop/app/services/rooms/data/endpoints/menaLocations'
+let g:netrw_dirhist_2='/Users/rsoni/.config/nvim'

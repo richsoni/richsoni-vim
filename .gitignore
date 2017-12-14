@@ -1,2 +1,3 @@
 *.swp
 config/pack/*
+config/.netrwhist
