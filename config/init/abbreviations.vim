@@ -13,3 +13,7 @@ augroup my_ruby_abbr
     au FileType ruby :iabbrev <buffer> iff ifkA
 augroup end
 iabbrev iimp !important;
+
+function! AutoRunRspec()
+  autocmd InsertLeave * !bundle exec rspec
+endfunction
