@@ -18,6 +18,7 @@ call minpac#add('tpope/vim-repeat')
 call minpac#add('tpope/vim-surround')
 call minpac#add('tpope/vim-speeddating')
 call minpac#add('henrik/vim-indexed-search')
+call minpac#add('alvan/vim-closetag')
 
 "Writing Plugins
 call minpac#add('git@github.com:reedes/vim-lexical.git')
@@ -37,6 +38,7 @@ call minpac#add('moll/vim-node')
 call minpac#add('tpope/vim-haml')
 call minpac#add('tpope/vim-markdown')
 call minpac#add('vim-ruby/vim-ruby')
+call minpac#add('leafgarland/typescript-vim')
 
 "JAVASCRIPT NICETIES
 "V Requires npm-install -g import-js
