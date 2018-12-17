@@ -1,3 +1,4 @@
+nnoremap g. f/i/..l
 nmap cow * :setlocal <C-R>=<SNR>56_toggle("wrap")<CR><CR>
 nnoremap GG G
 nnoremap <c-w>f :vertical wincmd f<CR>
@@ -27,6 +28,7 @@ inoremap <c-@> <space>
 "plugins
   "Tabular
     vnoremap  <leader>=  :Tabularize /
+
   "dispatch
     nnoremap <F8> :Make<cr>
     nnoremap <F7> :Dispatch npm test<cr>

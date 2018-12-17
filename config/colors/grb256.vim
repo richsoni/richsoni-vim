@@ -15,7 +15,7 @@ hi LineNr ctermfg=darkgray
 hi CursorLine     guifg=NONE        guibg=#121212     gui=NONE      ctermfg=NONE        ctermbg=234
 hi Function         guifg=#FFD2A7     guibg=NONE        gui=NONE      ctermfg=yellow       ctermbg=NONE        cterm=NONE
 
-hi Visual           guifg=NONE        guibg=NONE     gui=REVERSE      ctermfg=NONE        ctermbg=NONE    cterm=REVERSE
+highlight Visual term=reverse cterm=bold ctermbg=lightgreen ctermfg=16
 
 hi Error            guifg=NONE        guibg=NONE        gui=undercurl ctermfg=16       ctermbg=red         cterm=NONE     guisp=#FF6C60 " undercurl color
 hi ErrorMsg         guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=16       ctermbg=red         cterm=NONE
