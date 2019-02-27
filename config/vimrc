@@ -6,6 +6,9 @@ call minpac#init()
 
 "General Plugins
 call minpac#add('airblade/vim-gitgutter')
+call minpac#add('w0rp/ale')
+call minpac#add('kshenoy/vim-signature')
+call minpac#add('shougo/vimproc.vim')
 call minpac#add('kien/ctrlp.vim')
 call minpac#add('tpope/vim-rsi')
 call minpac#add('tpope/vim-projectionist')
@@ -21,6 +24,7 @@ call minpac#add('henrik/vim-indexed-search')
 call minpac#add('alvan/vim-closetag')
 call minpac#add('benmills/vimux')
 call minpac#add('vim-scripts/autoscroll.vim')
+call minpac#add('kyuhi/vim-emoji-complete')
 
 "Writing Plugins
 call minpac#add('git@github.com:reedes/vim-lexical.git')
@@ -36,6 +40,8 @@ call minpac#add('tpope/vim-unimpaired')
 "Language Plugins
 call minpac#add('chrisbra/csv.vim')
 call minpac#add('leafgarland/typescript-vim')
+call minpac#add('quramy/tsuquyomi')
+call minpac#add('heavenshell/vim-tslint')
 call minpac#add('jussi-kalliokoski/harmony.vim')
 call minpac#add('moll/vim-node')
 call minpac#add('tpope/vim-haml')
@@ -50,7 +56,5 @@ call minpac#add('Galooshi/vim-import-js')
 
 " "colors
 call minpac#add('twerth/ir_black')
-
-packloadall
 
 colorscheme grb256
