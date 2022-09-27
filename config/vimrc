@@ -25,6 +25,7 @@ call minpac#add('alvan/vim-closetag')
 call minpac#add('benmills/vimux')
 call minpac#add('vim-scripts/autoscroll.vim')
 call minpac#add('kyuhi/vim-emoji-complete')
+call minpac#add('vimwiki/vimwiki')
 
 "Writing Plugins
 call minpac#add('git@github.com:reedes/vim-lexical.git')
