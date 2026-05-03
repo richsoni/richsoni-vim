@@ -1,4 +1,5 @@
 *.swp
 config/pack/*
 config/.netrwhist
+config/.netrwhist~
 config/init/vimwiki.vim

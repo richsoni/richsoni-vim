@@ -49,7 +49,7 @@ call minpac#add('tpope/vim-haml')
 call minpac#add('tpope/vim-markdown')
 call minpac#add('vim-ruby/vim-ruby')
 call minpac#add('leafgarland/typescript-vim')
-call minpac#add('fatih/vim-go')
+" call minpac#add('fatih/vim-go')
 
 "JAVASCRIPT NICETIES
 "V Requires npm-install -g import-js
