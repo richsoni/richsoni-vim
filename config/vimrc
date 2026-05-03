@@ -5,10 +5,8 @@ call plug#begin()
 
 " General
 Plug 'airblade/vim-gitgutter'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'kshenoy/vim-signature'
-Plug 'shougo/vimproc.vim'
-Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-projectionist'
 Plug 'richsoni/vim-ecliptic'
@@ -19,16 +17,12 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-speeddating'
-Plug 'henrik/vim-indexed-search'
 Plug 'alvan/vim-closetag'
 Plug 'benmills/vimux'
-Plug 'vim-scripts/autoscroll.vim'
-Plug 'kyuhi/vim-emoji-complete'
 " Plug 'vimwiki/vimwiki'
 
 " Writing
 Plug 'reedes/vim-lexical'
-Plug 'townk/vim-autoclose'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-eunuch'
@@ -40,16 +34,10 @@ Plug 'tpope/vim-unimpaired'
 " Language
 Plug 'chrisbra/csv.vim'
 Plug 'leafgarland/typescript-vim'
-Plug 'quramy/tsuquyomi'
-Plug 'heavenshell/vim-tslint'
-Plug 'jussi-kalliokoski/harmony.vim'
 Plug 'moll/vim-node'
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-markdown'
 Plug 'vim-ruby/vim-ruby'
-
-" JavaScript
-Plug 'Galooshi/vim-import-js'
 
 " Colors
 Plug 'twerth/ir_black'
