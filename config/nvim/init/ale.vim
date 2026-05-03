@@ -1,5 +1,6 @@
 autocmd FileType javascript setlocal makeprg=eslint\ --format\ unix
 autocmd BufWritePost *.js silent make! <afile> | silent redraw!
+
 " Asynchronous Lint Engine (ALE)
 " Limit linters used for JavaScript.
 let g:ale_linters = {'javascript': ['flow'] }
