@@ -23,4 +23,8 @@ require("lazy").setup({
   },
   install = { missing = true },
   checker = { enabled = false },
+  -- Don't wipe vim-plug's rtp additions (vim-vinegar et al. live there).
+  performance = {
+    rtp = { reset = false },
+  },
 })
