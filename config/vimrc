@@ -18,7 +18,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-speeddating'
 Plug 'alvan/vim-closetag'
 Plug 'benmills/vimux'
-" Plug 'vimwiki/vimwiki'
 
 " Writing
 Plug 'reedes/vim-lexical'
@@ -41,14 +40,6 @@ Plug 'vim-ruby/vim-ruby'
 " Colors
 Plug 'twerth/ir_black'
 
-if has('nvim')
-  source ~/.vim/nvim/plugins.vim
-endif
-
 call plug#end()
-
-if has('nvim')
-  runtime! nvim/init/*.vim
-endif
 
 colorscheme grb256
