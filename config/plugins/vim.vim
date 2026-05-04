@@ -1,0 +1,38 @@
+" vim-plug declarations for vim. Sourced inside plug#begin/plug#end in vimrc.
+
+" General
+Plug 'airblade/vim-gitgutter'
+Plug 'kshenoy/vim-signature'
+Plug 'tpope/vim-rsi'
+Plug 'tpope/vim-projectionist'
+Plug 'richsoni/vim-ecliptic'
+Plug 'bogado/file-line'
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-speeddating'
+Plug 'alvan/vim-closetag'
+Plug 'benmills/vimux'
+
+" Writing
+Plug 'reedes/vim-lexical'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-scriptease'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-unimpaired'
+
+" Language
+Plug 'chrisbra/csv.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'moll/vim-node'
+Plug 'tpope/vim-haml'
+Plug 'tpope/vim-markdown'
+Plug 'vim-ruby/vim-ruby'
+
+" Colors
+Plug 'twerth/ir_black'

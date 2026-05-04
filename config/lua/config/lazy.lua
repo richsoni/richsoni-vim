@@ -19,12 +19,73 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
+    -- General
+    { "airblade/vim-gitgutter" },
+    { "kshenoy/vim-signature" },
+    { "tpope/vim-rsi" },
+    { "tpope/vim-projectionist" },
+    { "richsoni/vim-ecliptic" },
+    { "bogado/file-line" },
+    { "godlygeek/tabular" },
+    { "tpope/vim-abolish" },
+    { "tpope/vim-commentary" },
+    { "tpope/vim-repeat" },
+    { "tpope/vim-surround" },
+    { "tpope/vim-speeddating" },
+    { "alvan/vim-closetag" },
+    { "benmills/vimux" },
+
+    -- Writing
+    { "reedes/vim-lexical" },
+    { "tpope/vim-dispatch" },
+    { "tpope/vim-vinegar" },
+    { "tpope/vim-eunuch" },
+    { "tpope/vim-scriptease" },
+    { "tpope/vim-fugitive" },
+    { "tpope/vim-sensible" },
+    { "tpope/vim-unimpaired" },
+
+    -- Language
+    { "chrisbra/csv.vim" },
+    { "leafgarland/typescript-vim" },
+    { "moll/vim-node" },
+    { "tpope/vim-haml" },
+    { "tpope/vim-markdown" },
+    { "vim-ruby/vim-ruby" },
+
+    -- Colors
+    { "twerth/ir_black" },
+
+    -- Neovim-only: linting
     { "dense-analysis/ale" },
+
+    -- Neovim-only: LSP install manager + config
+    { "williamboman/mason.nvim", config = true },
+    {
+      "hrsh7th/cmp-nvim-lsp",
+      config = function() require("config.lsp") end,
+    },
+
+    -- Neovim-only: completion
+    {
+      "hrsh7th/nvim-cmp",
+      dependencies = {
+        "hrsh7th/cmp-nvim-lsp",
+        "hrsh7th/cmp-buffer",
+        "hrsh7th/cmp-path",
+        { "L3MON4D3/LuaSnip", version = "v2.*" },
+        "saadparwaiz1/cmp_luasnip",
+      },
+      config = function() require("config.cmp") end,
+    },
+
+    -- Neovim-only: syntax
+    {
+      "nvim-treesitter/nvim-treesitter",
+      build = ":TSInstall typescript tsx javascript json lua",
+      config = function() require("config.treesitter") end,
+    },
   },
   install = { missing = true },
   checker = { enabled = false },
-  -- Don't wipe vim-plug's rtp additions (vim-vinegar et al. live there).
-  performance = {
-    rtp = { reset = false },
-  },
 })
