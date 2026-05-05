@@ -59,6 +59,19 @@ require("lazy").setup({
     -- Neovim-only: linting
     { "dense-analysis/ale" },
 
+    -- Neovim-only: fuzzy finder
+    {
+      "ibhagwan/fzf-lua",
+      config = function() require("config.fzf") end,
+    },
+
+    -- Neovim-only: zk notes
+    {
+      "zk-org/zk-nvim",
+      dependencies = { "ibhagwan/fzf-lua" },
+      config = function() require("config.zk") end,
+    },
+
     -- Neovim-only: LSP install manager + config
     { "williamboman/mason.nvim", config = true },
     {
