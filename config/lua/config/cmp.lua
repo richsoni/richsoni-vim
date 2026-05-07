@@ -26,18 +26,16 @@ cmp.setup({
   ),
 })
 
-cmp.register_source("wiki_links", require("config.cmp_wiki").new())
-
--- Obsidian-style [[ completion: suggest every wiki link referenced anywhere in
--- the vault, including ones that don't have a file yet. The keyword pattern
--- starts after [[ so multi-word names ([[Terracotta Plant Watering]]) filter
--- as a single token instead of breaking at the first space.
 cmp.setup.filetype("markdown", {
   completion = {
     keyword_pattern = [==[\[\[\zs[^\]]*]==],
   },
   sources = {
-    { name = "wiki_links" },
+    { name = "obsidian" },
+    { name = "obsidian_new" },
+    { name = "obsidian_tags" },
     { name = "nvim_lsp" },
+    { name = "buffer" },
+    { name = "path" },
   },
 })

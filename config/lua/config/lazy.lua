@@ -65,11 +65,12 @@ require("lazy").setup({
       config = function() require("config.fzf") end,
     },
 
-    -- Neovim-only: zk notes
+    -- Neovim-only: obsidian notes
     {
-      "zk-org/zk-nvim",
+      "obsidian-nvim/obsidian.nvim",
+      ft = "markdown",
       dependencies = { "ibhagwan/fzf-lua" },
-      config = function() require("config.zk") end,
+      config = function() require("config.obsidian") end,
     },
 
     -- Neovim-only: LSP install manager + config
@@ -92,10 +93,18 @@ require("lazy").setup({
       config = function() require("config.cmp") end,
     },
 
+    -- Neovim-only: snacks (used for image rendering in obsidian notes)
+    {
+      "folke/snacks.nvim",
+      priority = 1000,
+      lazy = false,
+      config = function() require("config.snacks") end,
+    },
+
     -- Neovim-only: syntax
     {
       "nvim-treesitter/nvim-treesitter",
-      build = ":TSInstall typescript tsx javascript json lua",
+      build = ":TSInstall typescript tsx javascript json lua markdown markdown_inline",
       config = function() require("config.treesitter") end,
     },
   },
