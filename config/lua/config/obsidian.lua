@@ -16,4 +16,12 @@ require("obsidian").setup({
     name = "fzf-lua",
   },
   ui = { enable = false },
+  callbacks = {
+    enter_note = function(note)
+      vim.keymap.set("n", "gd", "<cmd>Obsidian follow_link<cr>", {
+        buffer = note.bufnr,
+        desc = "Obsidian: follow link under cursor",
+      })
+    end,
+  },
 })
