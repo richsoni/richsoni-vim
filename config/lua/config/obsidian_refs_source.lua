@@ -16,7 +16,7 @@ end
 
 M.complete = function(_, request, callback)
   local ok, refs = pcall(require, "obsidian.completion.refs")
-  if not ok or not (Obsidian and Obsidian.dir) then
+  if not ok then
     callback({ isIncomplete = false, items = {} })
     return
   end
@@ -27,10 +27,11 @@ M.complete = function(_, request, callback)
     return
   end
 
+  local vault_dir = (Obsidian and Obsidian.dir) and tostring(Obsidian.dir) or vim.fn.expand("%:p:h")
+
   -- Escape query for use in a ripgrep literal pattern
   local escaped = query:gsub("([%.%+%*%?%(%)%[%]%{%}%^%$%\\%|])", "\\%1")
   local pattern = string.format([=[\[\[%s[^\]|#]*]=], escaped)
-  local vault_dir = tostring(Obsidian.dir)
   local cursor_row = request.context.cursor.row - 1
   local seen = {}
   local items = {}
