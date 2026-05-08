@@ -27,15 +27,9 @@ cmp.setup({
 })
 
 cmp.setup.filetype("markdown", {
-  completion = {
-    keyword_pattern = [==[\[\[\zs[^\]]*]==],
-  },
   sources = {
     { name = "obsidian" },
     { name = "obsidian_new" },
     { name = "obsidian_tags" },
-    { name = "nvim_lsp" },
-    { name = "buffer" },
-    { name = "path" },
   },
 })

@@ -69,6 +69,7 @@ require("lazy").setup({
     {
       "obsidian-nvim/obsidian.nvim",
       ft = "markdown",
+      cond = function() return vim.fs.root(0, ".obsidian") ~= nil end,
       dependencies = { "ibhagwan/fzf-lua" },
       config = function() require("config.obsidian") end,
     },

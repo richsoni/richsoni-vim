@@ -4,7 +4,7 @@ require("obsidian").setup({
     {
       name = "auto",
       path = function()
-        return vim.fs.root(0, ".obsidian") or vim.fn.getcwd()
+        return vim.fs.root(0, ".obsidian")
       end,
     },
   },
