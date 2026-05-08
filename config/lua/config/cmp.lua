@@ -1,6 +1,8 @@
 local cmp = require("cmp")
 local luasnip = require("luasnip")
 
+cmp.register_source("obsidian_refs", require("config.obsidian_refs_source").new())
+
 cmp.setup({
   snippet = {
     expand = function(args) luasnip.lsp_expand(args.body) end,
@@ -29,6 +31,7 @@ cmp.setup({
 cmp.setup.filetype("markdown", {
   sources = {
     { name = "obsidian" },
+    { name = "obsidian_refs" },
     { name = "obsidian_new" },
     { name = "obsidian_tags" },
   },
