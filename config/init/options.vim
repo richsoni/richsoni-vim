@@ -52,3 +52,7 @@ set noswapfile
 set nobackup
 set iskeyword+=\-
 set showcmd
+
+" markdown perf
+let g:markdown_syntax_conceal = 0
+let g:markdown_minlines = 10
