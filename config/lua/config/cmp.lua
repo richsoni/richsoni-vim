@@ -27,12 +27,3 @@ cmp.setup({
     { { name = "buffer" },   { name = "path" } }
   ),
 })
-
-cmp.setup.filetype("markdown", {
-  sources = {
-    { name = "obsidian" },
-    { name = "obsidian_refs" },
-    { name = "obsidian_new" },
-    { name = "obsidian_tags" },
-  },
-})
